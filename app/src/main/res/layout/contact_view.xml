@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/contact_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/colorWhite">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivContactImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:transitionName="profile"
+                android:src="@drawable/default_profile"/>
+
+
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:layout_alignTop="@+id/ivContactImage"
+                android:layout_toRightOf="@+id/ivContactImage"
+                android:layout_toEndOf="@+id/ivContactImage"
+                android:layout_toLeftOf="@+id/textViewLastMessageTime"
+                android:layout_toStartOf="@+id/textViewLastMessageTime"
+                android:textColor="@android:color/primary_text_light"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tvLastMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/ivContactImage"
+                android:layout_toEndOf="@+id/ivContactImage"
+                android:layout_toLeftOf="@+id/textViewLastMessageTime"
+                android:layout_toStartOf="@+id/textViewLastMessageTime"
+                android:layout_below="@+id/tvContactName"
+                android:textSize="14sp"
+                android:textColor="@android:color/primary_text_light"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textViewLastMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:padding="8dp"
+                android:text="" />
+            <TextView
+                android:id="@+id/textViewLastMessagecount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:background="@drawable/textview_circuler"
+                android:layout_below="@+id/textViewLastMessageTime"
+                android:padding="8dp"
+                android:text="" />
+            <ImageView
+                android:id="@+id/ImgLastMessagecount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:src="@drawable/ic_delivered_mark"
+                android:visibility="gone"
+                android:layout_below="@+id/textViewLastMessageTime"
+                android:padding="8dp"
+                android:text="" />
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
